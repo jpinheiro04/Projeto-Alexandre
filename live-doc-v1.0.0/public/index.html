@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="Pt-br" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ACM &amp; Agendamento Consulta Medica</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+  </head>
+
+
+  <body>
+
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/gallery/logo.png" width="118" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
+              <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="#Sobre">Sobre nos</a></li>
+            </ul><a class="btn btn-sm btn-outline-primary rounded-pill order-1 order-lg-0 ms-lg-4" href="Login.php">Login</a>
+            </ul><a class="btn btn-sm btn-outline-primary rounded-pill order-1 order-lg-0 ms-lg-4" href="formulario.php">Cadastre-se</a>
+          </div>
+        </div>
+      </nav>
+      <section class="py-xxl-10 pb-0" id="home">
+        <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/hero-bg.png);background-position:top center;background-size:cover;">
+        </div>
+
+        <div class="container">
+          <div class="row min-vh-xl-100 min-vh-xxl-25">
+            <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 w-100" src="assets/img/gallery/hero.png" alt="hero-header" /></div>
+            <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
+              <h1 class="fw-light font-base fs-6 fs-xxl-7">Estamos  <strong>determinados </strong>para<br />deixar a sua &nbsp;<strong>vida melhor.</strong></h1>
+              <p class="fs-1 mb-5">Você pode obter os cuidados de que precisa 24 horas por dia, 7 dias por semana, seja on-line ou em <br />pessoa. Você será tratado por médicos especialistas atenciosos. </p>
+              <a class="btn btn-lg btn-primary rounded-pill" href="#Agendamento" role="button">Agende sua consulta</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" id="departamentos">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 py-3">
+              <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/bg-departments.png);background-position:top center;background-size:contain;">
+              </div>
+
+              <h1 class="text-center">Especialidades</h1>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="py-0"id="Especialidades">
+
+        <div class="container">
+          <div class="row py-5 align-items-center justify-content-center justify-content-lg-evenly">
+            <div class="col-auto col-md-4 col-lg-auto text-xl-start">
+              <div class="d-flex flex-column align-items-center">
+                <div class="icon-box text-center"><a class="text-decoration-none" href="#!"><img class="mb-3 deparment-icon" src="assets/img/icons/neurology.png" alt="..." /><img class="mb-3 deparment-icon-hover" src="assets/img/icons/neurology.svg" alt="..." />
+                    <p class="fs-1 fs-xxl-2 text-center">Neurologia</p>
+                  </a></div>
+              </div>
+            </div>
+            <div class="col-auto col-md-4 col-lg-auto text-xl-start">
+              <div class="d-flex flex-column align-items-center">
+                <div class="icon-box text-center"><a class="text-decoration-none" href="#!"><img class="mb-3 deparment-icon" src="assets/img/icons/eye-care.png" alt="..." /><img class="mb-3 deparment-icon-hover" src="assets/img/icons/eye-care.svg" alt="..." />
+                    <p class="fs-1 fs-xxl-2 text-center">Oftamologia</p>
+                  </a></div>
+              </div>
+            </div>
+            <div class="col-auto col-md-4 col-lg-auto text-xl-start">
+              <div class="d-flex flex-column align-items-center">
+                <div class="icon-box text-center"><a class="text-decoration-none" href="#!"><img class="mb-3 deparment-icon" src="assets/img/icons/cardiac.png" alt="..." /><img class="mb-3 deparment-icon-hover" src="assets/img/icons/cardiac.svg" alt="..." />
+                    <p class="fs-1 fs-xxl-2 text-center">Pneumologista</p>
+                  </a></div>
+              </div>
+            </div>
+            <div class="col-auto col-md-4 col-lg-auto text-xl-start">
+              <div class="d-flex flex-column align-items-center">
+                <div class="icon-box text-center"><a class="text-decoration-none" href="#!"><img class="mb-3 deparment-icon" src="assets/img/icons/heart.png" alt="..." /><img class="mb-3 deparment-icon-hover" src="assets/img/icons/heart.svg" alt="..." />
+                    <p class="fs-1 fs-xxl-2 text-center">Cardiologista</p>
+                  </a></div>
+              </div>
+            </div>
+            <div class="col-auto col-md-4 col-lg-auto text-xl-start">
+              <div class="d-flex flex-column align-items-center">
+                <div class="icon-box text-center"><a class="text-decoration-none" href="#!"><img class="mb-3 deparment-icon" src="assets/img/icons/osteoporosis.png" alt="..." /><img class="mb-3 deparment-icon-hover" src="assets/img/icons/osteoporosis.svg" alt="..." />
+                    <p class="fs-1 fs-xxl-2 text-center">Ortopedista</p>
+                  </a></div>
+              </div>
+            </div>
+            <div class="col-auto col-md-4 col-lg-auto text-xl-start">
+              <div class="d-flex flex-column align-items-center">
+                <div class="icon-box text-center"><a class="text-decoration-none" href="#!"><img class="mb-3 deparment-icon" src="assets/img/icons/ent.png" alt="..." /><img class="mb-3 deparment-icon-hover" src="assets/img/icons/ent.svg" alt="..." />
+                    <p class="fs-1 fs-xxl-2 text-center">Otorrinolaringologia</p>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="bg-secondary">
+        <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-eye-care.png);background-position:center;background-size:contain;">
+        </div>
+
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-5 col-xxl-6"><img class="img-fluid" src="assets/img/gallery/eye-care.png" alt="..." /></div>
+            <div class="col-md-7 col-xxl-6 text-center text-md-start">
+              <h2 class="fw-bold text-light mb-4 mt-4 mt-lg-0">Cuidados com os olhos com os melhores profissionais<br class="d-none d-sm-block" />e no orçamento.</h2>
+              <p class="text-light">Construímos um sistema de saúde que coloca as suas necessidades em primeiro lugar.<br class="d-none d-sm-block" />Para nós, não há nada mais importante do que a saúde dos <br class="d-none d-sm-block" />você e seus entes queridos. </p>
+              <div class="py-3"><a class="btn btn-lg btn-light rounded-pill" href="https://www.geap.org.br/blog/cuidados-para-a-saude-da-sua-visao/" role="button">Ler mais </a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pb-0" id="Sobre">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 py-3">
+              <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/about-us.png);background-position:top center;background-size:contain;">
+              </div>
+
+              <h1 class="text-center">Sobre nos</h1>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="py-5">
+        <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/about-bg.png);background-position:top center;background-size:contain;">
+        </div>
+
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 order-lg-1 mb-5 mb-lg-0"><img class="fit-cover rounded-circle w-100" src="assets/img/gallery/health-care.png" alt="..." /></div>
+            <div class="col-md-6 text-center text-md-start">
+              <h2 class="fw-bold mb-4">Estamos desenvolvendo um sistema de saúde <br class="d-none d-sm-block" />ao seu redor</h2>
+              <p>Acreditamos que todos deveriam ter acesso fácil a excelentes <br class="d-none d-sm-block" />assistência médica. Nosso objetivo é tornar o procedimento tão simples quanto <br class="d-none d-sm-block" />possível para nossos pacientes e oferecer tratamento independentemente<br class="d-none d-sm-block" />onde eles estão pessoalmente ou conforme sua conveniência. </p>
+              <div class="py-3">
+                <div class="py-3"><a class="btn btn-lg btn-dark rounded-pill" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/sus#:~:text=O%20Sistema%20Único%20de%20Saúde,toda%20a%20população%20do%20país." role="button">Ler mais </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pb-0">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 py-3">
+              <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/doctors-us.png);background-position:top center;background-size:contain;">
+              </div>
+
+              <h1 class="text-center">Medicos</h1>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+      <section class="py-5">
+        <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/doctors-bg.png);background-position:top center;background-size:contain;">
+        </div>
+
+        <div class="container">
+          <div class="row flex-center">
+            <div class="col-xl-10 px-0">
+              <div class="carousel slide" id="carouselExampleDark" data-bs-ride="carousel"><a class="carousel-control-prev carousel-icon z-index-2" href="#carouselExampleDark" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next carousel-icon z-index-2" href="#carouselExampleDark" role="button" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></a>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="row h-100 m-lg-7 mx-3 mt-6 mx-md-4 my-md-7">
+                      <div class="col-md-4 mb-8 mb-md-0">
+                        <div class="card card-span h-100 shadow">
+                          <div class="card-body d-flex flex-column flex-center py-5"><img src="assets/img/gallery/Cadu.png" width="128" alt="..." />
+                            <h5 class="mt-3">Carlos Eduardo</h5>
+                            <p class="mb-0 fs-xxl-1">Medicina Alternativa</p>
+                            <p class="text-600 mb-0">Florida, EUA</p>
+                            <p class="text-600 mb-4">22 anos de experiencia</p>
+                            <div class="text-center">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-8 mb-md-0">
+                        <div class="card card-span h-100 shadow">
+                          <div class="card-body d-flex flex-column flex-center py-5"><img src="assets/img/gallery/Guilherme.png" width="128" alt="..." />
+                            <h5 class="mt-3">Guilherme Virgilio</h5>
+                            <p class="mb-0 fs-xxl-1">Ginecologista  </p>
+                            <p class="text-600 mb-0">Sidney, Australia</p>
+                            <p class="text-600 mb-4">8 anos de experiencia</p>
+                            <div class="text-center">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-8 mb-md-0">
+                        <div class="card card-span h-100 shadow">
+                          <div class="card-body d-flex flex-column flex-center py-5"><img src="assets/img/gallery/Rick.png" width="128" alt="..." />
+                            <h5 class="mt-3">Luis Henrique</h5>
+                            <p class="mb-0 fs-xxl-1">Fisioterapia</p>
+                            <p class="text-600 mb-0">Londres, Inglaterra</p>
+                            <p class="text-600 mb-4">13 anos de experiencia</p>
+                            <div class="text-center">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="row h-100 m-lg-7 mx-3 mt-6 mx-md-4 my-md-7">
+                      <div class="col-md-4 mb-8 mb-md-0">
+                        <div class="card card-span h-100 shadow">
+                          <div class="card-body d-flex flex-column flex-center py-5"><img src="assets/img/gallery/Caio.jpg" width="128" alt="..." />
+                            <h5 class="mt-3">Caio Souza</h5>
+                            <p class="mb-0 fs-xxl-1">Pediatra</p>
+                            <p class="text-600 mb-0">Madrid, Espanha</p>
+                            <p class="text-600 mb-4">15 anos de experiencia</p>
+                            <div class="text-center">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-8 mb-md-0">
+                        <div class="card card-span h-100 shadow">
+                          <div class="card-body d-flex flex-column flex-center py-5"><img src="assets/img/gallery/Osvaldo Santana.png" width="128" alt="..." />
+                            <h5 class="mt-3">Osvaldo Santana</h5>
+                            <p class="mb-0 fs-xxl-1">Psiquiatra</p>
+                            <p class="text-600 mb-0">Manila, Filipinas</p>
+                            <p class="text-600 mb-4">3 meses de experiencia</p>
+                            <div class="text-center">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-8 mb-md-0">
+                        <div class="card card-span h-100 shadow">
+                          <div class="card-body d-flex flex-column flex-center py-5"><img src="assets/img/gallery/Walison Carvalho.png" width="128" alt="..." />
+                            <h5 class="mt-3">Walison Carvalho</h5>
+                            <p class="mb-0 fs-xxl-1">Gastroenterologista</p>
+                            <p class="text-600 mb-0">Berlim, Alemanha</p>
+                            <p class="text-600 mb-4">25 anos de experiencia</p>
+                            <div class="text-center">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row h-100 m-lg-7 mx-3 mt-6 mx-md-4 my-md-7">
+                      <div class="col-md-4 mb-8 mb-md-0">
+                        <div class="card card-span h-100 shadow">
+                          <div class="card-body d-flex flex-column flex-center py-5"><img src="assets/img/gallery/Willian Bueno.png" width="128" alt="..." />
+                            <h5 class="mt-3">Willian Bueno</h5>
+                            <p class="mb-0 fs-xxl-1">Cirurgião</p>
+                            <p class="text-600 mb-0">São Paulo, Brazil</p>
+                            <p class="text-600 mb-4">16 anos de experiencia</p>
+                            <div class="text-center">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-8 mb-md-0">
+                        <div class="card card-span h-100 shadow">
+                          <div class="card-body d-flex flex-column flex-center py-5"><img src="assets/img/gallery/Gabriel Tomassine.png" width="128" alt="..." />
+                            <h5 class="mt-3">Gabriel Tomassine</h5>
+                            <p class="mb-0 fs-xxl-1">Dermatologista</p>
+                            <p class="text-600 mb-0">Quito, Equador</p>
+                            <p class="text-600 mb-4">12 anos de experiencia</p>
+                            <div class="text-center">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-8 mb-md-0">
+                        <div class="card card-span h-100 shadow">
+                          <div class="card-body d-flex flex-column flex-center py-5"><img src="assets/img/gallery/Joao Gabriel.png" width="128" alt="..." />
+                            <h5 class="mt-3">Joao Gabriel</h5>
+                            <p class="mb-0 fs-xxl-1">Geriatra</p>
+                            <p class="text-600 mb-0">Nova Delhi, India</p>
+                            <p class="text-600 mb-4">20 anos de experiencia</p>
+                            <div class="text-center">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 py-3">
+              <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/people.png);background-position:top center;background-size:contain;">
+              </div>
+
+              <h1 class="text-center">PESSOAS QUE NOS AMAM</h1>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="py-0 bg-primary" id="Avaliações" ></section>
+      <section class="py-8">
+        <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/people-bg-1.png);background-position:center;background-size:cover;">
+        </div>
+
+        <div class="container">
+          <div class="row align-items-center offset-sm-1">
+            <div class="carousel slide" id="carouselPeople" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <div class="row h-100">
+                    <div class="col-sm-3 text-center"><img src="assets/img/gallery/Xuxa.png" width="100" alt="" />
+                      <h5 class="mt-3 fw-medium text-secondary">Xuxa Meneghel</h5>
+                      <p class="fw-normal mb-0"></p>
+                    </div>
+                    <div class="col-sm-9 text-center text-sm-start pt-3 pt-sm-0">
+                      <h2>Avaliação de Famosos!</h2>
+                      <div class="my-2"><i class="fas fa-star me-2"></i><i class="fas fa-star me-2"></i><i class="fas fa-star me-2"></i><i class="fas fa-star me-2"></i><i class="fas fa-star me-2"></i></div>
+                      <p>Recomendo totalmente o Livedoc para quem busca cuidados médicos e de saúde de qualidade. O aplicativo móvel e o site são incrivelmente fáceis de usar, e agendar consultas nunca foi tão simples. Além disso, fiquei impressionado com a eficiência da equipe médica e a autenticidade dos medicamentos prescritos. Recebi um atendimento excepcional durante todo o processo. O Livedoc definitivamente se destaca da concorrência e continuarei utilizando seus serviços no futuro.</p>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <div class="row h-100">
+                    <div class="col-sm-3 text-center"><img src="assets/img/gallery/Danilo.png" width="100" alt="" />
+                      <h5 class="mt-3 fw-medium text-secondary">Danilo Gentili</h5>
+                      <p class="fw-normal mb-0"></p>
+                    </div>
+                    <div class="col-sm-9 text-center text-sm-start pt-3 pt-sm-0">
+                      <h2>Avaliação de Famosos!</h2>
+                      <div class="my-2"><i class="fas fa-star me-2"></i><i class="fas fa-star me-2"></i><i class="fas fa-star me-2"></i><i class="fas fa-star me-2"></i></i><i class="fas fa-star-half-alt me-2"></i></div>
+                      <p>Minha experiência com o Livedoc foi bastante satisfatória. O aplicativo móvel e o site facilitaram muito o agendamento de consultas e a comunicação com os médicos. A qualidade dos serviços prestados é inquestionável, e fiquei tranquilo sabendo que todos os medicamentos eram genuínos e clinicamente comprovados. A equipe do Livedoc foi bastante atenciosa durante todo o processo. No entanto, acredito que ainda há espaço para melhorias na interface do aplicativo móvel para tornar a experiência ainda mais intuitivo.</p>
+                    </div>
+                  </div>
+                </div> 
+                <div class="carousel-item">
+                  <div class="row h-100">
+                    <div class="col-sm-3 text-center"><img src="assets/img/gallery/Marcos Mion.webp" width="100" alt="" />
+                      <h5 class="mt-3 fw-medium text-secondary">Marcos Mion</h5>
+                      <p class="fw-normal mb-0"></p>
+                    </div>
+                    <div class="col-sm-9 text-center text-sm-start pt-3 pt-sm-0">
+                      <h2>Avaliação de Famosos!</h2>
+                      <div class="my-2"><i class="fas fa-star me-2"></i><i class="fas fa-star me-2"></i><i class="fas fa-star me-2"></i><i class="fas fa-star-half-alt me-2"></i><i class="far fa-star"></i></div>
+                      <p>Eu altamente endosso o Livedoc para quem procura cuidados médicos e de saúde excepcionais. A plataforma móvel e o site são extremamente acessíveis, tornando o agendamento de consultas uma tarefa fácil. A equipe médica demonstrou uma eficiência notável, e os medicamentos prescritos são autênticos. Recebi um atendimento excepcional em todas as etapas. O Livedoc se diferencia claramente dos demais e pretendo utilizar seus serviços novamente no futuro.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="position-relative z-index-2 mt-5">
+                  <ol class="carousel-indicators">
+                    <li class="active" data-bs-target="#carouselPeople" data-bs-slide-to="0"></li>
+                    <li data-bs-target="#carouselPeople" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselPeople" data-bs-slide-to="2"> </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="py-0 bg-primary" id="Agendamento"></section>
+      <section class="py-5">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12 py-3">
+                      <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/people.png);background-position:top center;background-size:contain;"></div>
+                      <h1 class="text-center">Agendamento</h1>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      <section class="py-8">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/dot-bg.png);background-position:bottom right;background-size:auto;"></div>
+    
+                <div class="col-lg-6 z-index-2 mb-5">
+                    <img class="w-100" src="assets/img/gallery/appointment.png" alt="..." />
+                </div>
+                <div class="col-lg-6 z-index-2">
+                    <form class="row g-3" action="Envio.php" method="POST">
+                        <div class="col-md-12 mb-3">
+                            <label class="form-label" for="inputCategory">Especialidades</label>
+                            <select class="form-select" id="inputCategory" name="especialidade" style="background-color: rgb(235, 235, 235);">
+                                <option selected="selected">Especialidades</option>
+                                <option> Cardiologista</option>
+                                <option> Pneumologista</option>
+                                <option> Gastroenterologista</option>
+                                <option> Psiquiatra</option>
+                                <option> Geriatra</option>
+                                <option> Dermatologista</option>
+                                <option> Cirurgião</option>
+                                <option> Fisioterapia</option>
+                                <option> Medicina Alternativa</option>
+                                <option> Ginecologista</option>
+                                <option> Pediatra</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label" for="validationTextarea">Mensagem</label>
+                            <textarea class="form-control form-livedoc-control" id="validationTextarea" name="mensagem" placeholder="Mensagem" style="background-color: rgb(235, 235, 235); height: 150px;" required="required"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-grid">
+                                <input class="btn btn-primary rounded-pill" type="submit" name="submit" value="Enviar">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+      
+
+      <section class="py-5">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 py-3">
+              <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/blog-post.png);background-position:top center;background-size:contain;">
+              </div>
+
+              <h1 class="text-center">Blog</h1>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section>
+        <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/dot-bg.png);background-position:top left;background-size:auto;">
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-lg-3 mb-4">
+              <div class="card h-100 shadow card-span rounded-3"><img class="card-img-top rounded-top-3" src="assets/img/gallery/covid-19.png" alt="news" />
+                <div class="card-body"><span class="fs--1 text-primary me-3">Saude</span>
+                  <svg class="bi bi-calendar2 me-2" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"></path>
+                    <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"> </path>
+                  </svg><span class="fs--1 text-900">21 Nov, 2023</span><span class="fs--1"></span>
+                  <h5 class="font-base fs-lg-0 fs-xl-1 my-3">Uso de mascara </h5><a class="stretched-link" href="https://coronavirus.saude.mg.gov.br/blog/190-coronavirus-tipos-de-mascara">leia artigo completo</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4">
+              <div class="card h-100 shadow card-span rounded-3"><img class="card-img-top rounded-top-3" src="assets/img/gallery/laboratories.png" alt="news" />
+                <div class="card-body"><span class="fs--1 text-primary me-3">Medicina</span>
+                  <svg class="bi bi-calendar2 me-2" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"></path>
+                    <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"> </path>
+                  </svg><span class="fs--1 text-900">25 Dez, 2023</span><span class="fs--1"></span>
+                  <h5 class="font-base fs-lg-0 fs-xl-1 my-3">Avanço na médicina</h5><a class="stretched-link" href="https://blog.iclinic.com.br/avancos-da-medicina/">leia artigo completo</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4">
+              <div class="card h-100 shadow card-span rounded-3"><img class="card-img-top rounded-top-3" src="assets/img/gallery/nicotine.png" alt="news" />
+                <div class="card-body"><span class="fs--1 text-primary me-3">Novidades</span>
+                  <svg class="bi bi-calendar2 me-2" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"></path>
+                    <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"> </path>
+                  </svg><span class="fs--1 text-900">28 Jan, 2024</span><span class="fs--1"></span>
+                  <h5 class="font-base fs-lg-0 fs-xl-1 my-3">Descoberta de nova espécie</h5><a class="stretched-link" href="https://abori.com.br/ambiente/descoberta-nova-especie-de-planta/">leia artigo completo</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4">
+              <div class="card h-100 shadow card-span rounded-3"><img class="card-img-top rounded-top-3" src="assets/img/gallery/treatment.png" alt="news" />
+                <div class="card-body"><span class="fs--1 text-primary me-3">Saude</span>
+                  <svg class="bi bi-calendar2 me-2" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"></path>
+                    <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"> </path>
+                  </svg><span class="fs--1 text-900">12 Fev, 2024</span><span class="fs--1"></span>
+                  <h5 class="font-base fs-lg-0 fs-xl-1 my-3">Risco do autodiagnóstico</h5><a class="stretched-link" href="https://institutodepsiquiatriapr.com.br/blog/autodiagnostico-pela-internet-quais-os-riscos/">leia artigo completo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary">
+        <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/cta-bg.png);background-position:center right;margin-top:-8.125rem;background-size:contain;">
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="fw-bold text-light">Receba atualizações toda semana</h2>
+              <p class="text-soft-primary">Livedoc foi criado para melhorar a experiência do paciente. <br />Fornecendo testes de classe mundial e uma ampla gama de outros serviços.</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-0 bg-secondary">
+        <div class="bg-holder opacity-25" style="background-image:url(assets/img/gallery/dot-bg.png);background-position:top left;margin-top:-3.125rem;background-size:auto;">
+        </div>
+
+          <div class="container">
+            <div class="row justify-content-md-between justify-content-evenly py-4">
+              <div class="col-12 col-sm-8 col-md-6 col-lg-auto text-center text-md-start">
+                <p class="fs--1 my-2 fw-bold text-200">Todos os direitos reservados &copy; Livedoc Company, 2024</p>
+              </div>
+              <div class="col-12 col-sm-8 col-md-6">
+                <p class="fs--1 my-2 text-center text-md-end text-200"> Saúde é tudo, se cuide&nbsp;
+                  <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#F95C19" viewBox="0 0 16 16">
+                    <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"></path>
+                  </svg>&nbsp;&nbsp;<a class="fw-bold text-info" href="https://themewagon.com/" target="_blank"> </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+      </section>
+    </main>
+
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&amp;display=swap" rel="stylesheet">
+  </body>
+
+</html>
